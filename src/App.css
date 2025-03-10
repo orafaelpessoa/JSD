@@ -69,7 +69,7 @@ body.dark-mode nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #00796b; 
+  background-color: #025248; 
   color: white; 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -192,9 +192,10 @@ body.dark-mode .cards-section .card {
   background-color: #027368;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 50px;
   border-radius: 8px;
   margin-top: 40px;
+  margin-bottom: 100px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -233,15 +234,21 @@ body.dark-mode .contact-section {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: #027368;
-  color: white;
+  color: rgb(250, 211, 36);
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+  padding: 0 20px;
+  z-index: 1000;
 }
+
 
 body.dark-mode footer {
   background-color: #504f4f;
