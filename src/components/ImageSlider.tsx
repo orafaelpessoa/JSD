@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import JSD01 from '../assets/JSD01.jpg'
-import JSD02 from '../assets/JSD02.jpg'
-
+import IA01 from '../assets/IA01.jpeg'
+import IA02 from '../assets/IA02.jpeg'
+import IA03 from '../assets/IA03.jpeg'
+import IA04 from '../assets/IA04.jpeg'
 
 const ImageSlider: React.FC = () => {
-  const images = [JSD01, JSD02];
+  const images = [IA01, IA02, IA03, IA04];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
