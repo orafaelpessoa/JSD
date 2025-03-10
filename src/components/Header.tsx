@@ -1,6 +1,11 @@
 import React from 'react';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onToggleDarkMode: () => void;
+  isDarkMode: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ onToggleDarkMode, isDarkMode }) => {
   return (
     <header>
       <h1>JSD Telecomunicações</h1>
@@ -12,6 +17,10 @@ const Header: React.FC = () => {
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
+
+      <button onClick={onToggleDarkMode}>
+        {isDarkMode ? 'Desativar Modo Escuro' : 'Ativar Modo Escuro'}
+      </button>
     </header>
   );
 };

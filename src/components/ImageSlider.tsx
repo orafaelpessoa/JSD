@@ -10,7 +10,7 @@ import JSDLOGO04 from '../assets/JSDLOGO04.jpeg'
 
 
 const ImageSlider: React.FC = () => {
-  const images = [IA01, IA02, IA03, IA04, JSDLOGO01, JSDLOGO02, JSDLOGO03, JSDLOGO04];
+  const images = [IA01,JSDLOGO01 ,IA02, JSDLOGO02, IA03, JSDLOGO03, IA04, JSDLOGO04];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
